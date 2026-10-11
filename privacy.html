@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css"><link rel="icon" href="data:,"><title>プライバシーポリシー | personalhealth</title></head>
+<body><main><nav><a href="./">personalhealth</a> · プライバシーポリシー</nav>
+<h1>プライバシーポリシー</h1>
+<p>personalhealthは本人の健康・活動データを管理する個人用アプリです。このポリシーはアプリが取得するデータの取り扱いを説明します。</p>
+<h2>取得する情報</h2>
+<p>本人がOAuthなどで許可した範囲のデータをGarmin、Google Health、Withingsから取得します。Google Healthでは運動・歩数・距離・位置情報を含む運動原本、睡眠、心拍・HRV・体重・血中酸素などの健康指標、食事・水分の記録、心電図・不整脈通知、プロフィール・設定・登録デバイスの情報を取得対象とします。実際に保存される項目はアカウントに存在する記録と許可した範囲によります。</p>
+<p>APIへ接続するためのアクセストークンと更新用トークンも保存します。Googleのパスワードは保存しません。</p>
+<h2>利用目的</h2>
+<p>本人が自分の記録を保存して活動・睡眠・健康指標の履歴や推移を確認するために利用します。ローカルの可視化画面とJSON参照に使います。広告、販売、第三者への提供、AIモデルの学習には利用しません。</p>
+<h2>保存場所とアクセス</h2>
+<p>健康データと認証情報は本人の自宅Ubuntuのローカル領域に保存します。認証ファイルは本人のユーザーのみが読み書きできる権限で保存します。ローカルの可視化画面にログイン機能はなく、同じLANで指定アドレスへ接続できる端末からデータを閲覧できます。</p>
+<p>このGitHub Pagesサイトと公開リポジトリには健康データと認証情報を置きません。</p>
+<h2>共有と外部送信</h2>
+<p>現在の実装は取得した健康データを第三者のサービスへ自動送信しません。LLMへの送信・質問処理も未実装です。APIへの接続時は認証情報と取得条件を取得元サービスへ送信します。</p>
+<p>Google APIから取得した情報の利用は<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>のLimited Use要件に従います。</p>
+<h2>保存期間と削除</h2>
+<p>データは本人が削除するまでローカルに保存します。自動削除の保存期間は設定していません。本人はUbuntu上の保存済みデータと認証ファイルを削除できます。</p>
+<p><a href="https://myaccount.google.com/connections">Googleアカウントの接続設定</a>からpersonalhealthへの許可を取り消せます。許可を取り消すとGoogleからの新しい取得はできなくなります。既にローカルへ保存したデータは別途削除します。</p>
+<h2>変更と連絡先</h2>
+<p>データの取得範囲や利用方法を変更する場合はこのポリシーを更新します。</p>
+<p>運営者は<a href="https://github.com/nosamu-art">nosamu-art</a>です。お問い合わせは<a href="https://github.com/nosamu-art/personalhealth-pages/issues">このサイトのGitHub Issues</a>で受け付けます。公開されるため健康データや認証情報は投稿しないでください。</p>
+<footer>更新日：2026年10月11日 · <a href="./">説明ページへ戻る</a></footer>
+</main></body></html>
